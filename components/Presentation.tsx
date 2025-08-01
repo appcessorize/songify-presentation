@@ -29,21 +29,14 @@ function Presentation() {
         </div>
       ),
     },
-    // Video Demo Slide
+    // Video Title Slide
     {
-      type: "video-demo",
+      type: "video-title",
       content: (
-        <div className="flex flex-col items-center justify-center h-full">
-          <video
-            className="w-full max-w-4xl rounded-lg shadow-2xl"
-            controls
-            autoPlay
-            muted
-            loop
-          >
-            <source src="/demo-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <div className="flex flex-col items-center justify-center h-full text-center">
+          <Video className="w-32 h-32 text-pink-500 mb-8" />
+          <h2 className="text-6xl font-bold mb-4 text-black">Demo Video</h2>
+          <p className="text-2xl text-gray-600">See Songify in Action</p>
         </div>
       ),
     },
