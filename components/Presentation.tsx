@@ -29,6 +29,24 @@ function Presentation() {
         </div>
       ),
     },
+    // Video Demo Slide
+    {
+      type: "video-demo",
+      content: (
+        <div className="flex flex-col items-center justify-center h-full">
+          <video
+            className="w-full max-w-4xl rounded-lg shadow-2xl"
+            controls
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/demo-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      ),
+    },
     // Description Slide (Why)
     {
       type: "description",
